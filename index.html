@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>Curated Wellness | Launching Soon</title>
+
+  <style>
+    :root {
+      --background: #F7F3EC;
+      --charcoal: #2C2C2C;
+      --body: #4C463D;
+      --muted: #7A6E60;
+      --line: #D8CFC1;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: var(--background);
+      color: var(--charcoal);
+      font-family: Helvetica, Arial, sans-serif;
+    }
+
+    main {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 48px 24px;
+      text-align: center;
+    }
+
+    .container {
+      width: 100%;
+      max-width: 900px;
+    }
+
+    .logo {
+      width: min(520px, 82vw);
+      height: auto;
+      display: block;
+      margin: 0 auto 90px;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(40px, 6vw, 72px);
+      line-height: 1.08;
+      font-weight: 300;
+      letter-spacing: -0.04em;
+      color: var(--charcoal);
+    }
+
+    .statement {
+      max-width: 690px;
+      margin: 34px auto 0;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: clamp(16px, 2vw, 21px);
+      line-height: 1.65;
+      font-weight: 300;
+      color: var(--body);
+    }
+
+    .launch {
+      max-width: 360px;
+      margin: 88px auto 0;
+      padding-top: 28px;
+      border-top: 1px solid var(--line);
+    }
+
+    .launch-text {
+      margin: 0 0 28px;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 0.32em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border: 1px solid var(--charcoal);
+      color: var(--charcoal);
+      text-decoration: none;
+      font-family: Helvetica, Arial, sans-serif;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      transition: all 0.2s ease;
+    }
+
+    .button:hover {
+      background: var(--charcoal);
+      color: var(--background);
+    }
+
+    @media (max-width: 640px) {
+      main {
+        padding: 40px 20px;
+      }
+
+      .logo {
+        margin-bottom: 64px;
+      }
+
+      .statement {
+        margin-top: 26px;
+      }
+
+      .launch {
+        margin-top: 72px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <main>
+    <section class="container">
+      <img
+        src="cw-primary-logo.png"
+        alt="Curated Wellness"
+        class="logo"
+      />
+
+      <h1>Supplements with purpose.</h1>
+
+      <p class="statement">
+        Clean, evidence-backed supplements with no fillers, no artificial additives, and no ingredient that earns its place on the label by accident.
+      </p>
+
+      <div class="launch">
+        <p class="launch-text">Launching soon</p>
+
+        <a
+          class="button"
+          href="mailto:hello@curatedwellness.co.nz?subject=Pre-register my interest"
+        >
+          Pre-register your interest
+        </a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
